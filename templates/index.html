@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChatBot Python</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Panel chatbot">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">AI</div>
+          <div>
+            <p class="kicker">Python Chat</p>
+            <h1>ChatBot</h1>
+          </div>
+        </div>
+
+        <button class="new-chat" id="newChat" type="button" title="Obrolan baru">
+          <span aria-hidden="true">+</span>
+          <span>Obrolan baru</span>
+        </button>
+
+        <div class="profile-strip">
+          <div class="avatar" aria-hidden="true">CB</div>
+          <div>
+            <strong>Asisten Flask</strong>
+            <span><i></i>Online</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="chat-panel">
+        <header class="chat-header">
+          <div>
+            <p class="kicker">Percakapan</p>
+            <h2>Asisten Website</h2>
+          </div>
+          <span class="badge">Local Bot</span>
+        </header>
+
+        <section class="messages" id="messages" aria-live="polite">
+          <article class="message bot-message">
+            <div class="bubble">
+              Halo. Saya siap bantu kamu membuat ide, menjawab pertanyaan Python, atau membahas project.
+            </div>
+          </article>
+        </section>
+
+        <form class="composer" id="chatForm">
+          <textarea
+            id="messageInput"
+            name="message"
+            rows="1"
+            maxlength="500"
+            autocomplete="off"
+            placeholder="Tulis pesan..."
+            aria-label="Tulis pesan"
+          ></textarea>
+          <button type="submit" title="Kirim pesan" aria-label="Kirim pesan">
+            <span>Kirim</span>
+          </button>
+        </form>
+      </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
