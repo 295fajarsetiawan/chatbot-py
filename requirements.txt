@@ -1,0 +1,6 @@
+streamlit>=1.35
+mysql-connector-python>=8.4
+pandas>=2.2
+requests>=2.32
+urllib3<2
+openpyxl>=3.1

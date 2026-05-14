@@ -1,0 +1,7 @@
+DEFAULT_OLLAMA_MODEL = "qwen2.5:latest"
+DEFAULT_OLLAMA_URL = "http://192.168.200.212:11434/"
+
+DEFAULT_MYSQL_DATABASE = "chatbot"
+DEFAULT_MYSQL_HOST = "mysql-1df4bf7c-fajarsetiawan-54a2.h.aivencloud.com"
+DEFAULT_MYSQL_PORT = 18519
+DEFAULT_MYSQL_USER = "avnadmin"

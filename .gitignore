@@ -1,0 +1,6 @@
+.env
+.venv/
+.streamlit-home/
+.pycache/
+__pycache__/
+*.pyc
