@@ -2,6 +2,10 @@
 
 Aplikasi Streamlit untuk chat query ke database MySQL memakai Ollama.
 
+## Dokumentasi
+
+- [Tutorial membuat project dari awal sampai bisa digunakan](docs/tutorial-membuat-project.md)
+
 ## Fitur
 
 - Chat natural language ke database MySQL.
